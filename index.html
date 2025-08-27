@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cascata, Especificidade, Combinadores, Box Model e Display</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Serif+Display&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -32,16 +38,16 @@
                     <a href="#displays">Ir para "Diferenças entre display inline e display block"</a>
                 </li>
                 <li>
-                    <a href="#sp">Ir para "Combinação de Seletores"</a>
+                    <a href="#sp">Ir para "Serventia das propriedades"</a>
                 </li>
                 <li>
-                    <a href="#shorthand">Ir para "Combinação de Seletores"</a>
+                    <a href="#shorthand">Ir para "Opções possíveis de shorthand"</a>
                 </li>
                 <li>
-                    <a href="#sufixos">Ir para "Combinação de Seletores"</a>
+                    <a href="#sufixos">Ir para "Sufixos"</a>
                 </li>
                 <li>
-                    <a href="#box">Ir para "Combinação de Seletores"</a>
+                    <a href="#box">Ir para "Box-sizing: border-box"</a>
                 </li>
             </ul>
         </nav>
@@ -57,13 +63,7 @@
             <p>A regra da cascata no CSS afirma que, uma vez que o arquivo é lido como se fosse uma cascata, em caso de
                 conflito entre as propriedades, a última ordenança é a que deve prevalecer.</p>
 
-            <h3>Exemplo a seguir:</h3>
-            <ul>
-                <li></li>
-            </ul>
-        </div>
-
-        <div>
+        <div class="especificos">
             <h2 id="especificidade"> Especificidade</h2>
             <p>Diferentementemente da regra da cascata, a especificidade (que nada mais é do que o quão específico ou
                 qual a quantidade de pontos que cada seletor tem) conduz o código a considerar como mais importante, e
@@ -77,14 +77,14 @@
             <div>
                 <h2 id="combinacao">Combinação de Seletores</h2>
 
-                <h3>Combinação com espaço .primeiro h1</h3>
-                <p></p>
+                <h3>Combinação com .primeiro h1</h3>
+                <p>Engloba todos os elementos (h1) dentro da div com class .primeiro no CSS.</p>
 
-                <h3>Combinação de filho .primeira > h1</h3>
-                <p></p>
+                <h3>Combinação de .primeira > h1</h3>
+                <p>Engloba a div dentro da div, ou seja, só os filhos da class .primeiro.</p>
 
-                <h3>Combinação de soma .primeira h1 + h1</h3>
-                <p></p>
+                <h3>Combinação de,.primeira h1 + h1</h3>
+                <p>Engloba apenas os h1 que possuem um h1 antes deles.</p>
             </div>
         </section>
 
@@ -93,16 +93,16 @@
                 <h2 id="pseudo-classes">Funcionamento das pseudo-classes</h2>
 
                 <h3>First-child</h3>
-                <p></p>
+                <p>É o primeiro filho de um elemento.</p>
 
                 <h3>Last-child</h3>
-                <p></p>
+                <p>É o último filho de um elemento.</p>
 
                 <h3>Nth-child</h3>
-                <p></p>
+                <p>É o “número do filho” ou seja, entre parênteses se põe o número do filho (elemento) que se deseja estilizar.</p>
 
                 <h3>Nth-of-type</h3>
-                <p></p>
+                <p>É o número do tipo, por exemplo o: .primeiro h1:nth-of-type(4) é o quarto h1 dentro da div primeiro.</p>
             </div>
         </section>
 
@@ -163,46 +163,55 @@
 
         <section class="propriedades">
             <div id="serventia">
-                <h2 id="sp"></h2>
+                <h2 id="sp">Serventia das propriedades</h2>
 
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
+                <h3>Margin</h3>
+                <p>Delimita o espaço externo (fora da borda) de um elemento.</p>
+                <h3>Padding</h3>
+                <p>Delimita o espaço interno (entre o conteúdo e a borda) de um elemento.</p>
+                <h3>Border</h3>
+                <p>É a própria borda que envolve o elemento.</p>
             </div>
 
             <div id="short">
-                <h2 id="shorthand"></h2>
+                <h2 id="shorthand">Opções possíveis de shorthand</h2>
+                <p>Shorthand é como nos referimos á uma propriedade com vários valores na mesma linha, no sentido
+                    horário, no CSS.</p>
 
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
+                <h3>Com um valor</h3>
+                <p>Uma propriedade com apenas um valor na linha de comando do CSS.</p>
+                <h3>Com dois valores</h3>
+                <p>Uma propriedade com dois valores na linha de comando do CSS.</p>
+                <h3>Com três valores</h3>
+                <p>Uma propriedade com três valores na linha de comando do CSS.</p>
+                <h3>Com quatro valores</h3>
+                <p>Uma propriedade com quatro valores na linha de comando do CSS.</p>
             </div>
 
             <div id="suf">
-                <h2 id="sufixos"></h2>
+                <h2 id="sufixos">Sufixos</h2>
 
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
-                <h3></h3>
-                <p></p>
+                <h3>Block</h3>
+                <p> Usamos o sufixo “block” no padding e na margin quando queremos modificar em cima e embaixo do
+                    elemento.</p>
+                <h3>Inline</h3>
+                <p>Usamos o sufixo “inline” no padding e na margin quando queremos modificar nas laterais (dá pra usar o
+                    margin-inline: auto para pôr a div no centro) do elemento.</p>
+                <h3>Top</h3>
+                <p>Usamos o sufixo “top” na margin quando queremos modificar somente em cima do elemento.</p>
+                <h3>Bottom</h3>
+                <p>Usamos o sufixo “bottom” na margin quando queremos modificar somente embaixo do elemento.</p>
+                <h3>Left</h3>
+                <p>Usamos o sufixo “left” na margin quando queremos modificar somente ao lado esquerdo do elemento.</p>
+                <h3>Right</h3>
+                <p> Usamos o sufixo “right” na margin quando queremos modificar somente ao lado direitodo elemento.</p>
             </div>
         </section>
 
         <div id="bs-bb">
-            <h2 id="box"></h2>
-            <p></p>
+            <h2 id="box">Box-sizing: border-box</h2>
+            <p>O box-sizing: border-box controla o tamanho de toda a caixa permitindo que a mesma acompanhe os valores
+                do conteúdo nela.</p>
         </div>
     </main>
 </body>
