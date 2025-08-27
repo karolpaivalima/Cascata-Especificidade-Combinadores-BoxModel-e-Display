@@ -9,23 +9,200 @@
 
 <body>
     <header>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
-        <nav></nav>
+        <h1 id=""></h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#inicio">Ir para o início</a> <br>
+                </li>
+                <li>
+                    <a href="#cascata">Ir para "Regra da Cascata"</a>
+                </li>
+                <li>
+                    <a href="#especificidade">Ir para "Especificidade"</a>
+                </li>
+                <li>
+                    <a href="#combinacao">Ir para "Combinação de Seletores"</a>
+                </li>
+                <li>
+                    <a href="#pseudo-classes">Ir para "Funcionamento das pseudo-classes"</a>
+                </li>
+                <li>
+                    <a href="#displays">Ir para "Diferenças entre display inline e display block"</a>
+                </li>
+                <li>
+                    <a href="#sp">Ir para "Combinação de Seletores"</a>
+                </li>
+                <li>
+                    <a href="#shorthand">Ir para "Combinação de Seletores"</a>
+                </li>
+                <li>
+                    <a href="#sufixos">Ir para "Combinação de Seletores"</a>
+                </li>
+                <li>
+                    <a href="#box">Ir para "Combinação de Seletores"</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div>
             <h1 id="inicio">Cascata, Especificidade, Combinadores, Box Model e Display</h1>
+        </div>
 
-            <a href="#inicio">Voltar para o início</a>
+        <div>
+            <h2 id="cascata">Regra da Cascata</h2>
+            <p>A regra da cascata no CSS afirma que, uma vez que o arquivo é lido como se fosse uma cascata, em caso de
+                conflito entre as propriedades, a última ordenança é a que deve prevalecer.</p>
 
-            <p>header, nav, main, section, div.</p>
+            <h3>Exemplo a seguir:</h3>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2 id="especificidade"> Especificidade</h2>
+            <p>Diferentementemente da regra da cascata, a especificidade (que nada mais é do que o quão específico ou
+                qual a quantidade de pontos que cada seletor tem) conduz o código a considerar como mais importante, e
+                portando executar o comando, mais específico. A diferença entre o seletor pela tag, pela classe e pelo
+                id. O id é o seletor mais especifico, a classe é menos específica que o id porém mais específica do que
+                a tag, e a tag é a mais geral (e menos específica de todas entre essas).</p>
+        </div>
+
+
+        <section class="seletores">
+            <div>
+                <h2 id="combinacao">Combinação de Seletores</h2>
+
+                <h3>Combinação com espaço .primeiro h1</h3>
+                <p></p>
+
+                <h3>Combinação de filho .primeira > h1</h3>
+                <p></p>
+
+                <h3>Combinação de soma .primeira h1 + h1</h3>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="pseudo">
+            <div>
+                <h2 id="pseudo-classes">Funcionamento das pseudo-classes</h2>
+
+                <h3>First-child</h3>
+                <p></p>
+
+                <h3>Last-child</h3>
+                <p></p>
+
+                <h3>Nth-child</h3>
+                <p></p>
+
+                <h3>Nth-of-type</h3>
+                <p></p>
+            </div>
+        </section>
+
+        <section class="display">
+            <div id="diferencas">
+                <h2 id="displays">Diferenças entre display inline e display block</h2>
+                <p>Um display block sempre ocupa a largura da tela inteira então o próximo elemento colocado se
+                    localizará logo embaixo. Diferentemente do display inline, no qual os elementos se agrupam lado a
+                    lado, pois eles só ocupam o espaço necessário para existir e em elementos com display inline, width
+                    e height não se aplicam.</p>
+
+                <h3>Propriedades que podem ser aplicadas no display: block</h3>
+                <nav>
+                    <ul>
+                        <li>width;</li>
+                        <li>height;</li>
+                        <li>padding;</li>
+                        <li>margin;</li>
+                        <li>border.</li>
+                    </ul>
+                </nav>
+
+                <h3>Propriedades que podem ser aplicadas no display: inline</h3>
+                <nav>
+                    <ul>
+                        <li>padding;</li>
+                        <li>margin;</li>
+                        <li>border.</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="elementos">
+                <h3>Elementos que são por padrão display inline:</h3>
+                <nav>
+                    <ul>
+                        <li>a;</li>
+                        <li>strong;</li>
+                        <li>span;</li>
+                        <li>img.</li>
+                    </ul>
+                </nav>
+
+                <h3>Elementos que são por padrão display block:</h3>
+                <nav>
+                    <ul>
+                        <li>h1;</li>
+                        <li>p;</li>
+                        <li>div;</li>
+                        <li>section;</li>
+                        <li>main;</li>
+                        <li>header;</li>
+                        <li>nav.</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="propriedades">
+            <div id="serventia">
+                <h2 id="sp"></h2>
+
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+            </div>
+
+            <div id="short">
+                <h2 id="shorthand"></h2>
+
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+            </div>
+
+            <div id="suf">
+                <h2 id="sufixos"></h2>
+
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+                <h3></h3>
+                <p></p>
+            </div>
+        </section>
+
+        <div id="bs-bb">
+            <h2 id="box"></h2>
+            <p></p>
         </div>
     </main>
 </body>
